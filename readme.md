@@ -21,7 +21,7 @@ DELETE FROM customer WHERE customer_id = 600;
 
 ```
 
-<!-- Staff :  agregar , eliminar y actiualizar -->
+## Staff : agregar , eliminar y actiualizar
 
 ```sql
 /* Insertar nuevo staff */
@@ -40,7 +40,7 @@ DELETE FROM staff WHERE staff_id = 3;
 
 ```
 
-<!-- Actor :  agregar , eliminar y actiualizar -->
+## Actor : agregar , eliminar y actiualizar
 
 ```sql
 /* Insertar nuevo Actor puesto 201 */
