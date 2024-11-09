@@ -62,7 +62,26 @@ DELETE FROM actor WHERE actor_id = 201;
 ## • Listar todas las “rental” con los datos del “customer” dado un año y mes.
 
 ```sql
-
+SELECT
+	rental_id,
+	TO_CHAR(rental.rental_date, 'YYYY-MM') ,
+	customer.customer_id,
+	customer.store_id,
+	customer.first_name,
+	customer.last_name,
+	customer.email,
+	customer.address_id,
+	customer.activebool,
+	customer.create_date,
+	customer.last_update,
+	customer.active
+FROM
+	rental
+JOIN
+	customer
+ON
+	TO_CHAR(rental.rental_date, 'YYYY-MM') = '2005-08'
+;
 
 ```
 
